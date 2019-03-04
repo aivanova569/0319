@@ -1,0 +1,308 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	/*font-family: 'PT Sans', sans-serif;*/
+	font-family: 'Arial', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #333;
+}
+
+.container{
+	max-width: 480px;
+	margin: 0 auto;
+	padding: 30px 15px 20px;
+}
+
+.person__title{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	padding-left: 130px;
+	padding-bottom: 5px;
+}
+
+.person__text{
+	font-size: 12px;
+	line-height: 20px;
+	color: #808080;
+	padding-left: 130px;
+	padding-bottom: 8px;
+}
+
+.description__text{
+	line-height: 20px;
+	background-color: #fffbc8;
+	padding: 10px;
+	padding-left: 130px;
+	border: 1px solid #cecabf;
+	border-radius: 3px;
+	position: relative;
+}
+
+.person__photo{
+	position: absolute;
+	top: 43px;
+	margin: 0 auto;
+	z-index: 5;
+}
+
+.person__photo img{
+	margin-left: -15px;
+}
+
+.services__title{
+	text-align: right;
+	padding-right: 30px;
+	font-size: 13px;
+	line-height: 15px;
+	position: relative;
+}
+
+.line{
+	height: 1px;
+	max-width: 320px;
+	background-color: #cecabf;
+	margin: 15px 0;
+	margin-left: 130px;
+}
+
+.services__inner{
+	padding-left: 135px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.services__inner:before{
+	content: "";
+	height: 26px;
+	width: 1px;
+	background-color: #cecabf;
+	position: absolute;
+	top: 0px;
+	left: 130px;
+}
+
+.service-booking,
+.service-tours,
+.service-hotels{
+	font-size: 13px;
+	line-height: 26px;
+	position: relative;
+}
+.service__amount{
+	padding-right: 40px;
+	font-size: 13px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.service__amount-total{
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.booking-marker{
+	height: 25px;
+	width: 165%;
+	background-color: #b1e19b;
+	border-radius: 2px;
+	opacity: .4;
+	z-index: 2;
+	display: inline-block;
+	position: absolute;
+	left: -5px;
+}
+
+.tours-marker{
+	height: 25px;
+	width: 58%;
+	background-color: #ace2f8;
+	border-radius: 2px;
+	opacity: .4;
+	z-index: 2;
+	display: inline-block;
+	position: absolute;
+	left: -5px;
+}
+
+.hotels-marker{
+	height: 25px;
+	width: 91%;
+	background-color: #ace2f8;
+	border-radius: 2px;
+	opacity: .4;
+	z-index: 2;
+	display: inline-block;
+	position: absolute;
+	left: -5px;
+}
+
+.total-title{
+	padding-left: 130px;
+}
+
+.total-sum{
+	padding-right: 40px;
+}
+
+.reviews__wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+
+.reviews__title{
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.reviews__title a{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.reviews__icons{
+	font-size: 12px;
+}
+
+.likes{
+	padding-right: 35px;
+	display: inline-block;
+	position: relative;
+}
+
+.likes:before{
+	font-family: 'icomoon';
+	content: "\f004";
+	color: #73b4d5;
+	padding-right: 3px;
+}
+
+.reviews__amount:before{
+	font-family: 'icomoon';
+	content: "\e900";
+	color: #73b4d5;
+	font-size: 14px;
+	padding-right: 3px;
+}
+
+.user-name{
+	display: inline;
+	font-weight: 700;
+	padding-right: 5px;
+}
+
+.reviews__date{
+	font-size: 11px;
+	color: #808080;
+}
+
+.write-info{
+	padding: 20px 0 10px;
+}
+
+.user-info{
+	display: none;
+}
+
+.user-info textarea{
+	outline: none;
+	resize: none;
+}
+
+.reviews__text{
+	background-color: #f2fbff;
+	border: 1px solid #cfcfcf;
+	padding: 20px;
+	position: relative;
+}
+
+.reviews__text:before,
+.reviews__text:after{
+	content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 10px solid #cfcfcf; 
+	border-right: 10px solid transparent;
+	position: absolute;
+	top: -11px;
+}
+
+.reviews__text:after{
+	border-bottom: 7px solid #f2fbff;
+	border-right: 8px solid transparent;
+    left: 21px;
+    top: -7px;
+}
+
+.write__form{
+	background-color: #f2f2f2;
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+.contact__form textarea{
+	height: 65px;
+	resize: none;
+	width: 100%;
+	outline: none;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid #a9a9a9;
+	border-radius: 1px;
+	padding: 3px 13px;
+}
+
+.contact__form-input input{
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	background-color: #fdd639;
+	border: none;
+	padding: 14px 55px;
+	border-radius: 50px;
+	outline: none;
+	cursor: pointer;
+}
+
+.contact__form-input{
+	text-align: center;
+	padding: 23px 30px;
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 490px) {
+	.person__photo{
+	    top: 65px;
+	}
+
+	.booking-marker{
+	    width: 120%;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 400px) {
+	.booking-marker{
+	    width: 100%;
+	}
+}
+
+@media only screen and (max-width : 370px) {
+	.description__text{
+		font-size: 12px;
+	}
+
+	.reviews__title {
+	    font-size: 14px;
+	}
+
+}

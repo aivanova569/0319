@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <base href="/"> -->
+
+	<title>ROSTOVA</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#333">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="person container">
+		<div class="person__title">
+			Вероника Ростова
+		</div>
+		<div class="person__text">
+			Менеджер по продажам
+		</div>
+		<div class="person__description">
+			<div class="person__photo">
+				<img src="img/photo.png" alt="photo">
+			</div>
+			<div class="description__text">
+				Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны
+			</div>
+		</div>
+	</section>
+
+	<section class="services container">
+		<div class="services__title">
+			Услуг
+		</div>
+		<div class="line">
+		</div>
+		<div class="services__inner">
+			<div class="service-booking">
+				<span class="booking-marker"></span>
+				Ручное бронирование
+				<span class="booking__marker"></span>
+			</div>
+			<span class="service__amount">11</span>
+		</div>
+		<div class="services__inner">
+			<div class="service-tours">
+				<span class="tours-marker"></span>
+				Пакетные туры
+				<span class="tours__marker"></span>
+			</div>
+			<span class="service__amount">3</span>
+		</div>
+		<div class="services__inner">
+			<div class="service-hotels">
+				<span class="hotels-marker"></span>
+				Отели
+				<span class="hotels__marker"></span>
+			</div>
+			<span class="service__amount">1</span>
+		</div>
+		<div class="line"></div>
+		<div class="service__amount-total">
+			<div class="total-title">
+				Всего
+			</div>
+			<span class="total-sum">15</span>
+		</div>
+
+	</section>
+
+	<section class="reviews container" id="comments">
+		<div class="reviews__wrapper">
+			<div class="reviews__title">
+				Последние отзывы
+				<a href="#">Все отзывы</a>
+			</div>
+			<div class="reviews__icons">
+				<span class="likes">131</span>
+				<span class="reviews__amount">14</span>
+			</div>
+		</div>
+		<div class="write-info">
+			<div class="user-name">Самуил</div>
+			<span class="reviews__date">13 октября 2011</span>
+		</div>
+		<div class="reviews__text">
+			Привет, Верунь! ниче себе ты крутая. фотка класс!!!!
+		</div>
+		<div class="write-info">
+			<div class="user-name">Лилия Семёновна</div>
+			<span class="reviews__date">14 октября 2011</span>
+		</div>
+		<div class="reviews__text">
+			Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?
+		</div>
+		<div class="write-info">
+			<div class="user-name">Лилия Семёновна</div>
+			<span class="reviews__date">14 октября 2011</span>
+		</div>
+		<div class="reviews__text">
+			Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?
+		</div>
+	</section>
+
+	<section class="write__form">
+		<div class="container">
+			<div class="user-info">
+				<div class="users-name">
+					<textarea name="userName" cols="20" rows="1" required placeholder="Веедите имя"></textarea>
+				</div>
+			</div>
+			<form onsubmit="return false">
+				<div class="contact__form">
+					<textarea id="add_comment" name="comment" cols="30" rows="10" required placeholder=""></textarea>
+				</div>
+				<div class="contact__form-input">
+					<input type="submit" name="send" value="Написать консультанту">
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
